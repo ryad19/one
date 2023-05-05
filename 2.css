@@ -3,21 +3,52 @@ body {
 }
 
 h1 {
+  text-align: center;
   color: blue;
 }
 
-p {
-  font-size: 18px;
-}
-
-button {
-  background-color: green;
-  color: white;
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px;
-  border: none;
-  cursor: pointer;
 }
 
-button:hover {
-  background-color: darkgreen;
+.board {
+  margin: 20px auto;
+  width: 350px;
+  height: 350px;
+  background-color: blue;
+  border: 5px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+td.red {
+  background-color: red;
+}
+
+td.yellow {
+  background-color: yellow;
+}
+
+p {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
